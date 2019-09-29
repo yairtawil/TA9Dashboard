@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+.connect {
+  color: #138000;
+}
+.table-wrapper {
+  overflow: auto;
+  height: 100%;
+}
+tr {
+  &:hover, &.self {
+    background: rgba(103, 58, 183, 0.2);
+  }
+}

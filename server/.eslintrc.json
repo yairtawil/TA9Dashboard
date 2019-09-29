@@ -1,0 +1,20 @@
+{
+	"extends": "eslint:recommended",
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"env": {
+		"node": true,
+		"commonjs": true,
+	 	"es6": true,
+		"jasmine": true
+	},
+	"rules": {
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"no-console": "off",
+		"no-useless-escape": "off",
+		"arrow-body-style": ["error", "as-needed"],
+		"no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
+	}
+}

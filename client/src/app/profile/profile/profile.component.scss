@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  .example-header-image {
+    background-image: url('https://cdn2.iconfinder.com/data/icons/user-icon-2-1/100/user_5-15-512.png');
+    background-size: cover;
+  }
+
+  mat-card {
+    width: 400px;
+  }
+}

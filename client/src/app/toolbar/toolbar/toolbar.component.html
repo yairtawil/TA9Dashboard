@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+
+
+  <mat-toolbar-row>
+    <span>TA9 Test &nbsp;</span>
+
+    <nav mat-tab-nav-bar
+         color="secondary">
+      <a mat-tab-link
+         routerLink="/"
+         routerLinkActive
+         [routerLinkActiveOptions]="{ exact: true }"
+         #rla="routerLinkActive"
+         [active]="rla.isActive">
+        users
+      </a>
+
+      <a mat-tab-link
+         routerLink="profile"
+         routerLinkActive
+         #rlas="routerLinkActive"
+         [active]="rlas.isActive">
+        profile
+      </a>
+
+    </nav>
+
+    <span class="spacer"></span>
+
+    <a mat-mini-fab
+       color="default"
+       aria-label="GitHub Repository"
+       target="_blank"
+       [href]="LINK_TO_GITHUB">
+      <img alt="github" src="https://material.angular.io/assets/img/homepage/github-circle-white-transparent.svg" />
+    </a>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

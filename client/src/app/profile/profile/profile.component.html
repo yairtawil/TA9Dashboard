@@ -1,0 +1,40 @@
+<mat-card *ngIf="(currentUser$ | async) as currentUser">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+
+    <mat-card-title>{{ currentUser.name }}</mat-card-title>
+    <mat-card-subtitle>{{ currentUser.lastSeen | date: 'dd/MM/yy HH:mm' }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>
+      Connection:
+      <mat-icon
+        matTooltipPosition="above"
+        [matTooltip]="currentUser.isConnected"
+        [class.connect]="currentUser.isConnected"
+        aria-hidden="false" aria-label="Example home icon">
+        {{ currentUser.isConnected ? 'wifi' : 'wifi_off' }}
+      </mat-icon>
+    </p>
+
+    <p>
+      Resolution: {{ currentUser.resolution }}
+    </p>
+
+    <p>
+      Browser: {{ currentUser.browser }}
+    </p>
+
+    <p>
+      Operation System: {{ currentUser.os }}
+    </p>
+
+    <p>
+      Ip: {{ currentUser.ip }}
+    </p>
+
+
+  </mat-card-content>
+
+</mat-card>

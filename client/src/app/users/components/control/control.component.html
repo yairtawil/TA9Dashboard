@@ -1,0 +1,14 @@
+<div class="control">
+
+  <div class="left">
+    <mat-form-field>
+      <input matInput
+             [ngModel]="search$ | async"
+             (ngModelChange)="onChangeSearch($event)"
+             autocomplete="off"
+             placeholder="Search">
+    </mat-form-field>
+
+  </div>
+
+</div>

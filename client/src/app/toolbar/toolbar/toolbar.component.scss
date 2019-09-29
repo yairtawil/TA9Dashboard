@@ -1,0 +1,36 @@
+
+.toolbar {
+  height: 60px;
+  margin: -8px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+a[mat-mini-fab] {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a.mat-tab-link {
+  color: white;
+  opacity: 1;
+}
+
+mat-ink-bar.mat-ink-bar {
+  background-color: white !important;
+}
+
